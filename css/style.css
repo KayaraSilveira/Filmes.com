@@ -1,0 +1,219 @@
+/*Geral*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html {
+    background-color: #0f0f0f;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+/*Header*/
+header {
+    text-align: center;
+    background: linear-gradient(to right, #b795ce, #7506cb);
+    color: white;
+    padding: 5px 0;
+}
+header h1 {
+    margin: 0;
+}
+
+i { 
+    color: white;
+}
+
+/*Main*/
+main {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+form label {
+    color: white;
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-left: 5px;
+}
+
+form input, form textarea {
+    width: 96%;
+    margin-bottom: 15px;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 1px;
+}
+
+#register {
+    text-transform: uppercase;
+    color: white;
+    background: linear-gradient(to right, #a369ca, #7506cb);
+    margin-top: 12px;
+}
+
+#register:hover{
+    background: linear-gradient(to left, #a369ca, #7506cb);
+}
+
+ul {
+    width: 98%;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 50px 50px 30px 50px;
+    border: 1px solid #a369ca;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+li p {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.buttons {
+    text-align: right;
+}
+
+.buttons button {
+    margin: 0 10px;
+    background: none;
+    border: 1px solid #a369ca;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+}
+
+.buttons button i {
+    color: #a369ca;
+}
+
+.buttons button:hover {
+    transform: scale(1.2);
+}
+
+/*footer*/
+footer{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: #252525;
+}
+
+footer p {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+footer i {
+    color: #a369ca;
+    font-size: 20px;
+}
+
+/*modal*/
+#modal {
+    position: fixed;
+    top: 45%;
+    left: 25%;
+    z-index: 2;
+    text-align: center;
+    background: linear-gradient(to right, #a369ca, #7506cb);
+    padding: 50px;
+    border-radius: 20px;
+    width: 50%;
+    max-height: 50%;
+    margin: 20px auto;
+}
+
+#modal h2 {
+    color: white;
+}
+
+#modal button {
+    width: 35%;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #0f0f0f;
+    background: white;
+    margin-top: 12px;
+    font-weight: 900;
+}
+
+#modal button:hover{
+    transform: scale(1.1);
+}
+
+
+/*Responsivo*/
+@media (max-width: 991px) {
+    form label {
+        font-size: 14px;
+    }
+    form input, form textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    li {
+        padding: 25px 25px 15px 25px;       
+    }
+}
+
+@media (max-width: 689px) {
+    #modal h2 {
+        font-size: 24px;
+    }
+    #modal button {
+        width: 75%;
+    }
+}
+
+@media (max-width: 628px) {
+    #modal {
+        top: 30%;
+        padding: 30px;
+    }
+
+    #modal h2 {
+        font-size: 20px;
+    }
+    
+    #modal button {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 96%;
+    }
+}
+
+@media (max-width: 410px) {
+    #modal {
+        padding: 20px;
+    }
+
+    #modal h2 {
+        font-size: 18px;
+    }
+    
+    #modal button {
+        font-size: 10px;
+    }
+}
